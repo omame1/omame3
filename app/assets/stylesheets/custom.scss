@@ -27,7 +27,7 @@ textarea {
 
 .center {
   text-align: center;
-  h1 {
+  .center h1 {
     margin-bottom: 10px;
   }
 }
@@ -71,7 +71,8 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-  &:hover {
+}
+  #logo:hover {
     color: white;
     text-decoration: none;
   }
@@ -93,17 +94,7 @@ $gray-medium-light: #eaeaea;
   margin-top: 45px;
   @include box_sizing;
 }
-}
 
-/* various */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
-}
 /* table */
 
 table {
