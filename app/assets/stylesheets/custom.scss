@@ -1,16 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
-
-@mixin box_sizing {
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
-}
-
 /* universal */
 
 body {
@@ -27,9 +17,10 @@ textarea {
 
 .center {
   text-align: center;
-  .center h1 {
-    margin-bottom: 10px;
-  }
+}
+
+.center h1 {
+  margin-bottom: 10px;
 }
 
 /* typography */
@@ -51,7 +42,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #777;
 }
 
 p {
@@ -59,63 +50,37 @@ p {
   line-height: 1.7em;
 }
 
-
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
 }
-  #logo:hover {
-    color: white;
-    text-decoration: none;
-  }
-  /* mixins, variables */
 
-$gray-medium-light: #eaeaea;
-
-@mixin box_sizing {
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
 }
-/* various */
+
+/* debug */
 
 .debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
-  @include box_sizing;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
 }
 
-/* table */
-
-table {
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;  
-}
-
-th {
-  vertical-align: middle;
-  text-align: center;  
-}
-
-/* form */
-
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  @include box_sizing;
-}
+/* error_messages */
 
 #error_explanation {
   color: red;
