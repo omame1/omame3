@@ -29,8 +29,4 @@ end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
 # Mac環境でもこのままでOKです
-<<<<<<< HEAD
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-=======
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
->>>>>>> japanization-and-time-format
